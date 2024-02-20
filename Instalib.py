@@ -23,3 +23,13 @@ def instalogin(name,passw):
     submit.submit()
 
     sleep(5)
+
+    #save your login info?
+    sleep(10)
+    notnow = browser.find_element_by_xpath("//button[contains(text(), 'Not Now')]").click()
+    #turn on notif
+    sleep(10)
+    notnow2 = browser.find_element_by_xpath("//button[contains(text(), 'Not Now')]").click()
+
+def instaseeposts():
+
